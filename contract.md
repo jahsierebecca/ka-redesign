@@ -1,4 +1,4 @@
-# Karnes Allen Group Website REdesign Contract
+# Karnes Allen Group Website Redesign Contract
 
 Between Jahsie Ault and Karnes Allen Group 
 
