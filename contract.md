@@ -4,7 +4,7 @@ Between Jahsie Ault and Karnes Allen Group
 
 ## Summary: 
 
-I'll do my very best to fulfil your needs and meet your expectations, but it’s important to have things written down so that we both know what’s what, who should do what and when, and what will happen if something goes wrong. In this contract you won’t find any complicated legal terms or long passages of unreadable text. I have no desire to trick you into signing something that you might later regret. What we do want is what’s best for both parties, now and in the future.
+I'll do my very best to fulfill your needs and meet your expectations, but it’s important to have things written down so that we both know what’s what, who should do what and when, and what will happen if something goes wrong. In this contract you won’t find any complicated legal terms or long passages of unreadable text. I have no desire to trick you into signing something that you might later regret. 
 
 So in short;
 
