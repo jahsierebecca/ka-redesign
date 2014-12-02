@@ -15,5 +15,19 @@ The domain name www.karnesallengroup.com has already been purchased and the curr
 
 ###Technical Overview
 
+Website will be reviewed and tested by peers in the FED class. 
 
 ###Project Management
+
+This project will be managed and executed by Jahsie Ault. 
+
+*Project Schedule*
+  * 11/21 - elevator pitch is ready
+  * 11/26 - First draft of brief is ready online 
+  * 12/3 - initial technical review of stories, wireframes, flows
+  * 12/8 - technical review of code, client review of contract draft
+  * 12/12 - technical review, beta testing begins
+  * 12/13 - demo & presentation dress rehearsals
+  * 12/17 - Demos and Presentation, After-Party
+
+A small budget of $30 will be used to purchase stock photos. 
