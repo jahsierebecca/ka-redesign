@@ -15,7 +15,7 @@ The domain name www.karnesallengroup.com has already been purchased and the curr
 
 ###Technical Overview
 
-Website will be reviewed and tested by peers in the FED class. 
+Website will be reviewed and tested by peers in the FED class. The website will be made with Bootstrap and will include the following languages: HTML5, CSS3, SASS, Javascript and Jquery. It may include a form that will require some additional code elements but at the time of writing that has yet to be determined.
 
 ###Project Management
 
