@@ -92,7 +92,7 @@ We are doing this project as part of a Portland Code School class. Your contract
 The dotted line:
 
 
-Signed by ______________________________ on behalf of Karnes Allen Group, _________________________________ on ________________
+Signed by __________________________ on behalf of Karnes Allen Group, _________________________________ on ________________
 
 
 Signed by Jahsie Ault, _________________________________ on ________________
