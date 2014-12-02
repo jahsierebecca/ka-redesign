@@ -85,9 +85,16 @@ Just like a parking ticket, you can’t transfer this contract to anyone else wi
 
 Although the language is simple, the intentions are serious and this contract is a legal document under exclusive jurisdiction of U.S. courts.
 
+This Project is part of a Portland Code School capstone project.
+We are doing this project as part of a Portland Code School class. Your contract is entirely with the student. Neither Portland Code School nor any of its contractors or staff are responsible for any part of this project and cannot be held liable for any damages. If you have any questions, please contact the class instructor Al Zimmerman (azimmerman@portlandcodeschool.com)
 
-The dotted line
 
-Signed by and on behalf of [company name] Signed by and on behalf of [customer name] Date [date]
+The dotted line:
 
-Everyone should sign above and keep a copy for their records.
+
+Signed by ______________________________ on behalf of Karnes Allen Group, _________________________________ on ________________
+
+
+Signed by Jahsie Ault, _________________________________ on ________________
+
+
