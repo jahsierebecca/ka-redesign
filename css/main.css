@@ -7,7 +7,8 @@ body {
   padding-right: auto; }
 
 .navbar {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  height: 70px; }
 
 #bs-example-navbar-collapse-1 {
   margin: 10px 0; }
@@ -66,15 +67,14 @@ body {
 
 .tidbits {
   padding: 0;
-  text-align: center;
-  /* .icon-container {
-  	background-color: $turq;
-  } */ }
+  text-align: center; }
   .tidbits .icon {
     margin: 10px; }
   .tidbits .icon-text {
     max-width: 200px;
     padding: 20px 0px; }
+  .tidbits .icon-container {
+    padding-top: 20px; }
 
 blockquote p {
   padding: 30px 0 30px 0;
@@ -93,5 +93,7 @@ blockquote p {
 
   .tidbits .icon {
     margin: 50px 0; } }
+#space-fill {
+  height: 120vh; }
 
 /*# sourceMappingURL=main.css.map */

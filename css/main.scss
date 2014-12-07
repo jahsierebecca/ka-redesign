@@ -24,6 +24,7 @@ body {
 
 .navbar {
 	margin-bottom: 0px;
+	height: 70px;
 }
 
 #bs-example-navbar-collapse-1 {
@@ -102,11 +103,10 @@ text-align: center;
 	max-width: 200px;
 	padding: 20px 0px;
 }
-/* .icon-container {
-	background-color: $turq;
-} */
+.icon-container {
+	padding-top: 20px;	
+} 
 }
-
 
 
 blockquote {
@@ -131,5 +131,9 @@ blockquote {
 	.tidbits .icon {
 		margin: 50px 0;
 		}
+}
 
+
+#space-fill {
+	height: 120vh;
 }
