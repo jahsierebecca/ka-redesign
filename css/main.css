@@ -1,14 +1,51 @@
+/*********** MEDIA QUERIES ***************/
+/*@media (min-width: 200px) and (max-width: 600px) {
+	 p {
+		color: red;
+	} 
+} */
+/*********** FONTS ***************/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,700);
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 400; }
+
+h5 {
+  font-style: italic;
+  font-size: 1.2em; }
+
+/*********** END FONTS ***************/
+/*********** COLORS ***************/
+/*********** END COLORS ***************/
+/*********** MIXINS ***************/
+/*********** GLOBAL ***************/
 body {
   padding-top: 70px;
-  color: #22313F; }
+  color: #22313F;
+  overflow: scroll; }
 
 .container {
   padding-left: auto;
   padding-right: auto; }
 
+/* Navigation */
 .navbar {
   margin-bottom: 0px;
   height: 70px; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: #fff; }
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 1.2em; }
 
 #bs-example-navbar-collapse-1 {
   margin: 10px 0; }
@@ -29,42 +66,81 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  background-color: #fff; }
-
-.navbar-default .navbar-nav > li > a {
-  font-size: 1.2em; }
-
-#home-jumbo {
-  background-image: url("../img/looking.jpg");
-  background-color: #65BAEB;
-  background-attachment: fixed;
-  background-size: cover; }
-
-#bottom-jumbo {
-  background-image: url("../img/getStarted.jpg");
-  background-color: #65BAEB;
-  background-size: cover; }
-
-#home-about {
-  background-color: #65BAEB; }
-
-#about-text {
-  text-align: right;
-  padding: 30px;
-  box-sizing: border-box; }
-
-#about-img {
-  background-image: url("../img/handshake.jpg");
-  background-size: cover;
-  min-height: 200px; }
-
 .media-body {
   color: #116D97; }
 
+blockquote p {
+  padding: 30px 0 30px 0;
+  max-width: 70%; }
+
+.v-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.btn-default {
+  height: 30px;
+  font-size: 1em;
+  line-height: .75em;
+  margin: 5px; }
+
+#space-fill {
+  height: 120vh; }
+
+footer {
+  margin: 0;
+  padding: 5px 0;
+  height: 50px;
+  background-color: #116D97; }
+  footer .foot-col {
+    background-color: #116D97;
+    height: 40px; }
+  footer p, footer a {
+    padding: 10px;
+    line-height: 1em;
+    top: 50%;
+    color: white;
+    margin: 0; }
+    footer p .btn-default, footer a .btn-default {
+      margin: 0; }
+  footer img {
+    float: right;
+    max-height: 30px;
+    width: auto; }
+    @media screen and (max-width: 400px) {
+      footer img {
+        float: left;
+        /* HOW TO OVERRIDE THE IMPORTANT PULL RIGHT? */ } }
+
+/*********** END GLOBAL ***************/
+/*********** Homepage ***************/
+/* Block 1 */
+#home-jumbo {
+  background-image: url("../img/BoiseKA.jpg");
+  background-color: #65BAEB;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center; }
+  #home-jumbo .jumbo-content {
+    position: relative;
+    top: 20%;
+    -webkit-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%); }
+
+/* Block 2 */
 #icon-block {
   padding: 0; }
 
+@media screen and (max-width: 768px) {
+  .icon-container {
+    height: 250px;
+    background-color: #00A99D; }
+
+  .tidbits .icon {
+    margin: 50px 0; } }
 .tidbits {
   padding: 0;
   text-align: center; }
@@ -76,24 +152,61 @@ body {
   .tidbits .icon-container {
     padding-top: 20px; }
 
-blockquote p {
-  padding: 30px 0 30px 0;
-  max-width: 70%; }
+/* Block 3 */
+#home-about {
+  height: 60vh;
+  background-color: #65BAEB;
+ /*
+	@media screen and (max-width: 400px) {
+		height: 30vh;
+	} */ }
+  #home-about .row {
+    height: 100%; }
+  #home-about #about-text {
+    box-sizing: border-box;
+    text-align: right;
+    padding: 5% 7%;
+    top: auto; }
+  #home-about #about-img {
+    background-image: url("../img/business-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%; }
 
-.btn-default {
-  height: 30px;
-  font-size: 1em;
-  line-height: .75em;
-  margin: 5px; }
+/* Block 4 */
+#bottom-jumbo {
+  background-image: url("../img/getStarted.jpg");
+  background-color: #65BAEB;
+  background-size: cover; }
 
-@media screen and (max-width: 768px) {
-  .icon-container {
-    height: 250px;
-    background-color: #00A99D; }
+/*********** About Us ***************/
+/*********** Services ***************/
+/*********** Fee ***************/
+/*********** Contact ***************/
+/*********** Style Guide ***************/
+.color {
+  height: 100px;
+  padding: 10px; }
 
-  .tidbits .icon {
-    margin: 50px 0; } }
-#space-fill {
-  height: 120vh; }
+.swatch1 {
+  background-color: #22313F;
+  color: white; }
+
+.swatch2 {
+  background-color: #116D97; }
+
+.swatch3 {
+  background-color: #65BAEB; }
+
+.swatch4 {
+  background-color: #00A99D; }
+
+.swatch5 {
+  background-color: #EFC761; }
+
+.swatch6 {
+  background-color: white;
+  color: black;
+  border: 1px solid black; }
 
 /*# sourceMappingURL=main.css.map */

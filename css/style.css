@@ -1,0 +1,27 @@
+$dark-blue: #116D97;
+$light-blue: #65BAEB;
+$turq: #00A99D;
+$yellow: #EFC761;
+$text: #22313F;
+
+.swatch1 {
+	background-color: $text;
+}
+
+.swatch2 {
+	background-color: $dark-blue;
+}
+.swatch3 {
+	background-color: $light-blue;
+}
+.swatch4 {
+	background-color: $turq;
+}
+.swatch5 {
+	background-color: $yellow;
+}
+.swatch6 {
+	background-color: white;
+	color: black;
+}
+

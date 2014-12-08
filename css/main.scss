@@ -1,20 +1,65 @@
+/*********** MEDIA QUERIES ***************/
+/*@media (min-width: 200px) and (max-width: 600px) {
+	 p {
+		color: red;
+	} 
+} */
+
+/*********** FONTS ***************/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,700);
+
+// Font Variables
+$mainFont: 'Open Sans', sans-serif; 
+
+
+// Styles
+body {
+	font-family: $mainFont;
+	font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $mainFont;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+h5 {
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+/*********** END FONTS ***************/
+
+
+/*********** COLORS ***************/
+
 $dark-blue: #116D97;
 $light-blue: #65BAEB;
 $turq: #00A99D;
 $yellow: #EFC761;
 $text: #22313F;
 
-@mixin vertical-align {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+/*********** END COLORS ***************/
+
+/*********** MIXINS ***************/
+@mixin v-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
+/*********** GLOBAL ***************/
 body {
 	padding-top: 70px;
 	color: $text;
+	overflow: scroll;
 }
 
 .container {
@@ -22,9 +67,19 @@ body {
 	padding-right: auto;
 }
 
+
+/* Navigation */
 .navbar {
 	margin-bottom: 0px;
 	height: 70px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+	font-size: 1.2em;
 }
 
 #bs-example-navbar-collapse-1 {
@@ -38,76 +93,18 @@ body {
 	margin-bottom: 0;
 	height: 450px;
 	.jumbo-content {
-		@include vertical-align;
+		@include v-align;
 	}
 }
 
 .center {
-	  margin-left: auto;
+	margin-left: auto;
   margin-right: auto;
 }
 
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-	background-color: #fff;
-}
-
-.navbar-default .navbar-nav>li>a {
-	font-size: 1.2em;
-}
-
-
-#home-jumbo {
-	background-image: url("../img/looking.jpg");
-	background-color: $light-blue;
-	background-attachment: fixed;
-	background-size: cover;
-}
-
-#bottom-jumbo {
-		background-image: url("../img/getStarted.jpg");
-	background-color: $light-blue;
-	background-size: cover;
-}
-
-#home-about {
-	background-color: $light-blue;
-}
-
-#about-text {
-	text-align: right;
-	padding: 30px;
-	box-sizing: border-box;
-}
-
-#about-img {
-	background-image: url("../img/handshake.jpg");
-	background-size: cover;
-	min-height: 200px;
-}
 .media-body {
 	color: $dark-blue;
 }
-
-#icon-block {
-	padding: 0;
-}
-
-
-.tidbits {
-	padding: 0;
-text-align: center;
-.icon {
-	margin: 10px;}
-	.icon-text {
-	max-width: 200px;
-	padding: 20px 0px;
-}
-.icon-container {
-	padding-top: 20px;	
-} 
-}
-
 
 blockquote {
 	p {
@@ -116,11 +113,79 @@ blockquote {
 	}
 }
 
+.v-align {
+		position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
 .btn-default {
 	height: 30px;
 	font-size: 1em;
 	line-height: .75em;
 	margin: 5px;
+}
+
+#space-fill {
+	height: 120vh;
+}
+
+footer {
+	margin: 0;
+	padding: 5px 0;
+	height: 50px;
+	background-color: $dark-blue;
+	.foot-col {
+		background-color: $dark-blue;
+		height: 40px;
+	}
+	p, a {
+		padding: 10px;
+		line-height: 1em;
+		top: 50%;
+		color: white;
+		margin: 0;
+		.btn-default {
+			margin: 0;
+		}
+	}
+	img {
+		float: right;
+		max-height: 30px;
+		width: auto;
+		@media screen and (max-width: 400px) {
+		float: left;  /* HOW TO OVERRIDE THE IMPORTANT PULL RIGHT? */
+		}
+	}
+}
+/*********** END GLOBAL ***************/
+
+/*********** Homepage ***************/
+
+
+/* Block 1 */
+#home-jumbo {
+	background-image: url("../img/BoiseKA.jpg");
+	background-color: $light-blue;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+		.jumbo-content {
+		position: relative;
+		top: 20%;
+		-webkit-transform: translateY(-20%);
+		-ms-transform: translateY(-20%);
+		transform: translateY(-20%);
+	}
+}
+
+
+
+/* Block 2 */
+#icon-block {
+	padding: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -133,7 +198,95 @@ blockquote {
 		}
 }
 
-
-#space-fill {
-	height: 120vh;
+.tidbits {
+	padding: 0;
+	text-align: center;
+	.icon {
+		margin: 10px;}
+		.icon-text {
+		max-width: 200px;
+		padding: 20px 0px;
+	}
+	.icon-container {
+		padding-top: 20px;	
+	} 
 }
+
+/* Block 3 */
+#home-about {
+	height: 60vh;
+	background-color: $light-blue;
+ /*
+	@media screen and (max-width: 400px) {
+		height: 30vh;
+	} */
+	.row {
+		height: 100%;
+	}
+	#about-text {
+	box-sizing: border-box;
+	text-align: right;
+	padding: 5% 7%;
+	top: auto;
+	}
+
+#about-img {
+	background-image: url("../img/business-meeting.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+}
+}
+
+
+
+/* Block 4 */
+#bottom-jumbo {
+	background-image: url("../img/getStarted.jpg");
+	background-color: $light-blue;
+	background-size: cover;
+}
+
+
+/*********** About Us ***************/
+
+/*********** Services ***************/
+
+/*********** Fee ***************/
+
+/*********** Contact ***************/
+
+
+/*********** Style Guide ***************/
+
+.colorSwatch {
+
+}
+
+.color {
+	height: 100px;
+	padding: 10px;
+}
+
+.swatch1 {
+	background-color: $text;
+	color: white;	
+}
+.swatch2 {
+	background-color: $dark-blue;
+}
+.swatch3 {
+	background-color: $light-blue;
+}
+.swatch4 {
+	background-color: $turq;
+}
+.swatch5 {
+	background-color: $yellow;
+}
+.swatch6 {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+}
+
