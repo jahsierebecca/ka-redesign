@@ -32,7 +32,7 @@ html{background-image:none;background-color: transparent}
 
 /* Borders */
 #container{border:0 solid #cccccc}
-.wufoo .info{border-bottom:1px dotted #CCCCCC}
+.wufoo .info{border-bottom: 0;}
 .wufoo .instruct{border:1px solid #e6e6e6}
 
 /* Typography */
@@ -68,6 +68,7 @@ color: #22313F;
 	color:#444444}
 .wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{
 	font-size:100%;
+	height: 35px; /* ADDED FOR INPUT HEIGHT */
 	font-family:"Open Sans", sans-serif; 
 	color: #22313F;
 	background-color: #edf7fd;

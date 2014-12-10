@@ -189,7 +189,7 @@ p {
 	background-image: url("../img/BoiseKA.jpg");
 	background-color: $light-blue;
 	background-attachment: fixed;
-	background-position: center center;
+	background-position: center;
 		.jumbo-content {
 		position: relative;
 		top: 20%;
@@ -212,19 +212,17 @@ p {
 		height: 200px;
 	
 	}
-	.tidbits {
+	#tidbitsBottom {
 		border-bottom: 1px solid $turq;
 		}
-	#tidbitsBottom {
-		border-bottom: none;
-	}	
 }
 
 .tidbits {
 	padding: 0;
 	text-align: center;
 	.icon {
-		margin: 10px;}
+		margin: 10px;
+	}
 		.icon-text {
 		max-width: 200px;
 		padding: 20px 0px;
@@ -236,27 +234,36 @@ p {
 
 /* Block 3 */
 #home-about {
-  height: 60vh;
-  background-color: #65BAEB;
+	padding: 0;
+	background-color: $light-blue;  
  /*
 	@media screen and (max-width: 400px) {
 		height: 30vh;
 	} */ }
   #home-about .row {
-    height: 100%; }
-  #about-text {
-    box-sizing: border-box;
-    text-align: right;
-    padding: 5% 7%;
-    top: auto; 
-    max-width: 600px;
-
+  	display: table;
+  	overflow: scroll;
+  	margin: 0;
+    height: 100%; 	
+	  	#about-text {
+	    box-sizing: border-box;
+	    text-align: right;
+	    padding: 5% 7%;
+	    top: auto; 
+	    max-width: 600px;
+		}
+		#about-textBlock, #about-img {
+			float: none;
+    display: table-cell;
+    vertical-align: top;
+		}
 }
   #about-img {
     background-image: url("../img/business-meeting.jpg");
+    background-color: $turq;
     background-size: cover;
     background-position: center;
-    height: 100%; }
+     }
 
 /* Block 4 */
 #bottom-jumbo {
@@ -268,7 +275,7 @@ p {
 /*********** About Us ***************/
 
 #about-jumbo {
-	background-image: url("../img/stock2-2.jpg");
+	background-image: url("../img/stock2.jpg");
 	background-position: bottom;
 	h1, p {
 		color: rgba(255, 255, 255, 0.7);
