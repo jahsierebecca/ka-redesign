@@ -11,5 +11,9 @@ h1 {
 h2 {
   color: blue;
   background-color: grey; }
+  
+  .text {
+    background-color: red;
+  }
 
 /*# sourceMappingURL=formStyle.css.map */
