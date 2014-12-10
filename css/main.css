@@ -136,7 +136,7 @@ p {
   background-image: url("../img/BoiseKA.jpg");
   background-color: #65BAEB;
   background-attachment: fixed;
-  background-position: center center; }
+  background-position: center; }
   #home-jumbo .jumbo-content {
     position: relative;
     top: 20%;
@@ -153,11 +153,8 @@ p {
   .icon-container {
     height: 200px; }
 
-  .tidbits {
-    border-bottom: 1px solid #00A99D; }
-
   #tidbitsBottom {
-    border-bottom: none; } }
+    border-bottom: 1px solid #00A99D; } }
 .tidbits {
   padding: 0;
   text-align: center; }
@@ -171,7 +168,7 @@ p {
 
 /* Block 3 */
 #home-about {
-  height: 60vh;
+  padding: 0;
   background-color: #65BAEB;
  /*
 	@media screen and (max-width: 400px) {
@@ -179,20 +176,26 @@ p {
 	} */ }
 
 #home-about .row {
+  display: table;
+  overflow: scroll;
+  margin: 0;
   height: 100%; }
-
-#about-text {
-  box-sizing: border-box;
-  text-align: right;
-  padding: 5% 7%;
-  top: auto;
-  max-width: 600px; }
+  #home-about .row #about-text {
+    box-sizing: border-box;
+    text-align: right;
+    padding: 5% 7%;
+    top: auto;
+    max-width: 600px; }
+  #home-about .row #about-textBlock, #home-about .row #about-img {
+    float: none;
+    display: table-cell;
+    vertical-align: top; }
 
 #about-img {
   background-image: url("../img/business-meeting.jpg");
+  background-color: #00A99D;
   background-size: cover;
-  background-position: center;
-  height: 100%; }
+  background-position: center; }
 
 /* Block 4 */
 #bottom-jumbo {
