@@ -1,15 +1,106 @@
-/* Wufoo fields
 
-emailMessage
-emailAddress
-lastName
-firstName 
-*/
-h1 {
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,700);
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   color: red; }
 
-h2 {
-  color: blue;
-  background-color: grey; }
+h4 {
+  font-size: 1.5em;
+  font-weight: 400; }
 
-/*# sourceMappingURL=formStyle.css.map */
+h5 {
+  font-style: italic;
+  font-size: 1.2em; }
+
+/* Logo */
+#logo a {background-image:none;); min-height:0; height:0px}
+* html #logo a {/* IE6 png Support */
+	background-image: none;
+}
+/* Backgrounds */
+html{background-image:none;background-color: transparent}
+#logo{background-image:none;background-color: transparent}
+#container{background:#FFFFFF}
+.wufoo input.text, .wufoo textarea.textarea{background:#FFFFFF url(/images/fieldbg.gif) repeat-x top}
+.wufoo .focused{background:#FFF7C0}
+.wufoo .instruct{background-color:#F5F5F5}
+
+/* Borders */
+#container{border:0 solid #cccccc}
+.wufoo .info{border-bottom:1px dotted #CCCCCC}
+.wufoo .instruct{border:1px solid #e6e6e6}
+
+/* Typography */
+.wufoo .info h2 {
+	font-size:160%;
+	font-family: "Open Sans", sans-serif; 
+font-size: 24px; 
+font-style: bold;
+font-weight: 700;
+color: #22313F; 
+}
+.wufoo .info div{
+	font-size:95%;
+	"Open Sans", sans-serif;
+	inherit;color:#444444}
+.wufoo .section h3{
+	font-size:110%;
+	"Open Sans", sans-serif;
+	background:#FFFFFF;
+	color:#000000}
+.wufoo .section div{
+	font-size:85%;
+	 "Open Sans", sans-serif;
+	color:#444444}
+.wufoo label.desc, .wufoo legend.desc{
+	font-size:95%;
+	"Open Sans", sans-serif;
+	color: #22313F;
+}
+.wufoo li div, .wufoo li div label, .wufoo li span label{
+	font-family:
+	inherit;
+	color:#444444}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{
+	font-size:100%;
+	font-family:"Open Sans", sans-serif; 
+	color: #22313F;
+	background-color: #edf7fd;
+	border: none;
+	border-radius: 5px;
+	padding: 2px 6px;
+}
+.wufoo label.choice{
+	color:#brown}
+.wufoo .instruct{
+	font-size:80%;
+	"Open Sans", sans-serif;
+	color:#grey;
+}
+
+.wufoo .submit {
+  background-color: #3498db;
+  font-family:"Open Sans", sans-serif; 
+  color: #ffffff;
+  font-size: 18px;
+  padding: 3px 6px;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 0;
+}
+
+.submit:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
