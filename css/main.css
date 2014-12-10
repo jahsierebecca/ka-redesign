@@ -39,8 +39,16 @@ body {
 /* Navigation */
 .navbar {
   margin-bottom: 0px;
-  height: 70px; }
+  height: 80px; }
 
+.navbar-collapse {
+  background-color: white; }
+
+/**************  Test for mobile nav margin
+.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+	margin-right: 0px;
+}
+*****************/
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   background-color: #fff; }
 
@@ -51,6 +59,10 @@ body {
   margin: 10px 0; }
 
 .jumbotron {
+  height: 60vh;
+  background-color: #65BAEB;
+  background-size: cover;
+  background-position: center center;
   margin-bottom: 0;
   height: 450px; }
   .jumbotron h1, .jumbotron p, .jumbotron a {
@@ -89,30 +101,8 @@ blockquote p {
 #space-fill {
   height: 120vh; }
 
-footer {
-  margin: 0;
-  padding: 5px 0;
-  height: 50px;
-  background-color: #116D97; }
-  footer .foot-col {
-    background-color: #116D97;
-    height: 40px; }
-  footer p, footer a {
-    padding: 10px;
-    line-height: 1em;
-    top: 50%;
-    color: white;
-    margin: 0; }
-    footer p .btn-default, footer a .btn-default {
-      margin: 0; }
-  footer img {
-    float: right;
-    max-height: 30px;
-    width: auto; }
-    @media screen and (max-width: 400px) {
-      footer img {
-        float: left;
-        /* HOW TO OVERRIDE THE IMPORTANT PULL RIGHT? */ } }
+.mini-jumbo {
+  height: 45vh; }
 
 /*********** END GLOBAL ***************/
 /*********** Homepage ***************/
@@ -121,7 +111,6 @@ footer {
   background-image: url("../img/BoiseKA.jpg");
   background-color: #65BAEB;
   background-attachment: fixed;
-  background-size: cover;
   background-position: center center; }
   #home-jumbo .jumbo-content {
     position: relative;
@@ -136,11 +125,13 @@ footer {
 
 @media screen and (max-width: 768px) {
   .icon-container {
-    height: 250px;
-    background-color: #00A99D; }
+    height: 200px; }
 
-  .tidbits .icon {
-    margin: 50px 0; } }
+  .tidbits {
+    border-bottom: 1px solid #00A99D; }
+
+  #tidbitsBottom {
+    border-bottom: none; } }
 .tidbits {
   padding: 0;
   text-align: center; }
@@ -175,14 +166,24 @@ footer {
 
 /* Block 4 */
 #bottom-jumbo {
-  background-image: url("../img/getStarted.jpg");
-  background-color: #65BAEB;
-  background-size: cover; }
+  background-image: url("../img/getStarted.jpg"); }
 
 /*********** About Us ***************/
+#about-jumbo {
+  background-image: url("../img/stock2.jpg"); }
+
 /*********** Services ***************/
+#services-jumbo {
+  background-image: url("../img/stock.jpg"); }
+
 /*********** Fee ***************/
+#fee-jumbo {
+  background-image: url("../img/stock3.jpg"); }
+
 /*********** Contact ***************/
+#contact-jumbo {
+  background-image: url("../img/stock3.jpg"); }
+
 /*********** Style Guide ***************/
 .color {
   height: 100px;
@@ -208,5 +209,42 @@ footer {
   background-color: white;
   color: black;
   border: 1px solid black; }
+
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+footer {
+  margin: 0;
+  padding: 10px 0;
+  height: 50px;
+  background-color: #116D97; }
+  footer .foot-col {
+    background-color: #116D97;
+    height: 40px; }
+  footer p, footer a {
+    display: inline-block;
+    clear: both;
+    vertical-align: middle;
+    line-height: 1em;
+    top: 50%;
+    color: white;
+    margin: 0; }
+    footer p .btn-default, footer a .btn-default {
+      margin: 0; }
+  footer a {
+    float: right; }
+  footer a > .img-responsive {
+    float: right;
+    max-height: 30px;
+    width: auto; }
+    @media screen and (max-width: 400px) {
+      footer a > .img-responsive {
+        float: left;
+        /* HOW TO OVERRIDE THE IMPORTANT PULL RIGHT? */ } }
 
 /*# sourceMappingURL=main.css.map */
