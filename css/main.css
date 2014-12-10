@@ -151,18 +151,21 @@ blockquote p {
 	@media screen and (max-width: 400px) {
 		height: 30vh;
 	} */ }
-  #home-about .row {
-    height: 100%; }
-  #home-about #about-text {
-    box-sizing: border-box;
-    text-align: right;
-    padding: 5% 7%;
-    top: auto; }
-  #home-about #about-img {
-    background-image: url("../img/business-meeting.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100%; }
+
+#home-about .row {
+  height: 100%; }
+
+#home-about #about-text {
+  box-sizing: border-box;
+  text-align: right;
+  padding: 5% 7%;
+  top: auto; }
+
+#home-about #about-img {
+  background-image: url("../img/business-meeting.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%; }
 
 /* Block 4 */
 #bottom-jumbo {
