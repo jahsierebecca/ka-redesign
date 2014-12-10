@@ -104,6 +104,9 @@ blockquote p {
 .mini-jumbo {
   height: 45vh; }
 
+.page-body {
+  margin: 50px; }
+
 /*********** END GLOBAL ***************/
 /*********** Homepage ***************/
 /* Block 1 */
