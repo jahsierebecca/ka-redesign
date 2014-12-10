@@ -9,6 +9,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,700);
 
+
 // Font Variables
 $mainFont: 'Open Sans', sans-serif; 
 
@@ -29,8 +30,10 @@ h4 {
 }
 
 h5 {
+	font-family: 'Merriweather', serif;	
 	font-style: italic;
-	font-size: 1.2em;
+	font-size: 1.3em;
+	font-weight: 400;
 }
 
 /*********** END FONTS ***************/
@@ -89,7 +92,19 @@ body {
 
 .navbar-default .navbar-nav>li>a {
 	font-size: 1.2em;
+	margin-top: 5px;
 }
+
+.navbar-default .navbar-toggle {
+	margin-top: 25px;
+	background-color: $turq;
+	border: 0px;
+	.icon-bar {
+	background-color: white;
+}
+}
+
+
 
 #bs-example-navbar-collapse-1 {
 	margin: 10px 0;
@@ -102,6 +117,7 @@ body {
 	background-position: center center;
 	h1, p, a {
 		text-align: center;
+		max-width: 100%;
 	}
 	margin-bottom: 0;
 	height: 450px;
@@ -117,13 +133,6 @@ body {
 
 .media-body {
 	color: $dark-blue;
-}
-
-blockquote {
-	p {
-		padding: 30px 0 30px 0;
-		max-width: 70%;
-	}
 }
 
 .v-align {
@@ -152,6 +161,24 @@ blockquote {
 .page-body {
 	margin: 50px;
 }
+
+.testemonial {
+	padding: 20px 0;
+}
+
+blockquote {
+	border-left: 2px solid $turq;
+	font-family: 'Merriweather', serif;	
+	font-style: italic;
+	font-size: 1.5em;
+	margin: 40px;
+	max-width: 600px;	
+	padding-left: 30px;
+}
+
+p {
+	max-width: 800px;
+}
 /*********** END GLOBAL ***************/
 
 /*********** Homepage ***************/
@@ -177,6 +204,7 @@ blockquote {
 /* Block 2 */
 #icon-block {
 	padding: 0;
+	max-width: 900px;
 }
 
 @media screen and (max-width: 768px) {
@@ -216,12 +244,15 @@ blockquote {
 	} */ }
   #home-about .row {
     height: 100%; }
-  #home-about #about-text {
+  #about-text {
     box-sizing: border-box;
     text-align: right;
     padding: 5% 7%;
-    top: auto; }
-  #home-about #about-img {
+    top: auto; 
+    max-width: 600px;
+
+}
+  #about-img {
     background-image: url("../img/business-meeting.jpg");
     background-size: cover;
     background-position: center;
@@ -229,7 +260,7 @@ blockquote {
 
 /* Block 4 */
 #bottom-jumbo {
-	background-image: url("../img/getStarted.jpg");
+	background-image: url("../img/notebook.jpg");
 
 }
 
@@ -238,12 +269,19 @@ blockquote {
 
 #about-jumbo {
 	background-image: url("../img/stock2.jpg");
+	background-position: bottom;
+	h1, p {
+		color: rgba(255, 255, 255, 0.7);
+	}
 }
 
 /*********** Services ***************/
 
 #services-jumbo {
 	background-image: url("../img/stock.jpg");
+		h1, p {
+		color: rgba(255, 255, 255, 0.8);
+	}
 }
 /*********** Fee ***************/
 
