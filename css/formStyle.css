@@ -8,9 +8,8 @@ firstName
 h1 {
   color: red; }
 
-.lastName {
-  color: red;
-  clear: both;
-  background-color: green; }
+h2 {
+  color: blue;
+  background-color: grey; }
 
 /*# sourceMappingURL=formStyle.css.map */
