@@ -46,11 +46,7 @@ body {
 .navbar-collapse {
   background-color: white; }
 
-/**************  Test for mobile nav margin
-.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
-	margin-right: 0px;
-}
-*****************/
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   background-color: #fff; }
 

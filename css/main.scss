@@ -81,6 +81,7 @@ body {
 	background-color: white;
 }
 
+.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse
 /**************  Test for mobile nav margin
 .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
 	margin-right: 0px;
@@ -341,6 +342,8 @@ p {
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
 }
+
+
 
 footer {
 	margin: 0;
