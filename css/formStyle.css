@@ -1,5 +1,6 @@
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,700);
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400; }
@@ -39,10 +40,10 @@ html{background-image:none;background-color: transparent}
 .wufoo .info h2 {
 	font-size:160%;
 	font-family: "Open Sans", sans-serif; 
-font-size: 24px; 
-font-style: bold;
-font-weight: 700;
-color: #22313F; 
+	font-size: 24px; 
+	font-style: bold;
+	font-weight: 700;
+	color: #22313F; 
 }
 .wufoo .info div{
 	font-size:95%;
