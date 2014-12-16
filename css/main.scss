@@ -194,7 +194,6 @@ p {
 	background-image: url("../img/BoiseKA.jpg");
 	background-color: $light-blue;
 	background-attachment: fixed;
-	background-position: center;
 		.jumbo-content {
 		position: relative;
 		top: 20%;
@@ -309,6 +308,12 @@ p {
 	background-image: url("../img/stock.jpg");
 }
 
+@media screen and (max-width: 768px) {
+	.col-sm-5 {
+		margin-top: 35px;
+	}
+}
+
 /*********** Style Guide ***************/
 
 .colorSwatch {
@@ -374,6 +379,7 @@ footer {
 	}
 	a {
 		float: right;
+				margin-top: 0;
 	}
 	a>.img-responsive {
 		float: right;

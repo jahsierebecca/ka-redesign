@@ -134,8 +134,7 @@ p {
 #home-jumbo {
   background-image: url("../img/BoiseKA.jpg");
   background-color: #65BAEB;
-  background-attachment: fixed;
-  background-position: center; }
+  background-attachment: fixed; }
   #home-jumbo .jumbo-content {
     position: relative;
     top: 20%;
@@ -221,6 +220,9 @@ p {
 #contact-jumbo {
   background-image: url("../img/stock.jpg"); }
 
+@media screen and (max-width: 768px) {
+  .col-sm-5 {
+    margin-top: 35px; } }
 /*********** Style Guide ***************/
 .color {
   height: 100px;
@@ -274,7 +276,8 @@ footer {
     footer p .btn-default, footer a .btn-default {
       margin: 0; }
   footer a {
-    float: right; }
+    float: right;
+    margin-top: 0; }
   footer a > .img-responsive {
     float: right;
     max-height: 30px;

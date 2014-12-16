@@ -69,7 +69,7 @@ html{background-image:none;background-color: transparent}
 	color:#444444}
 .wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{
 	font-size:100%;
-	height: 35px; /* ADDED FOR INPUT HEIGHT */
+	height: 50px; /* ADDED FOR INPUT HEIGHT */
 	font-family:"Open Sans", sans-serif; 
 	color: #22313F;
 	background-color: #edf7fd;
