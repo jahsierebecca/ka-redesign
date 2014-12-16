@@ -122,7 +122,7 @@ blockquote {
   font-style: italic;
   font-size: 1.5em;
   margin: 40px;
-  max-width: 600px;
+  max-width: 650px;
   padding-left: 30px; }
 
 p {
@@ -132,9 +132,8 @@ p {
 /*********** Homepage ***************/
 /* Block 1 */
 #home-jumbo {
-  background-image: url("../img/BoiseKA.jpg");
-  background-color: #65BAEB;
-  background-attachment: fixed; }
+  background-image: url("../img/BoiseKA2.jpg");
+  background-color: #65BAEB; }
   #home-jumbo .jumbo-content {
     position: relative;
     top: 20%;
@@ -190,7 +189,7 @@ p {
     vertical-align: top; }
 
 #about-img {
-  background-image: url("../img/business-meeting.jpg");
+  background-image: url("../img/hand.jpg");
   background-color: #00A99D;
   background-size: cover;
   background-position: center; }
@@ -201,16 +200,11 @@ p {
 
 /*********** About Us ***************/
 #about-jumbo {
-  background-image: url("../img/stock2-2.jpg");
-  background-position: bottom; }
-  #about-jumbo h1, #about-jumbo p {
-    color: rgba(255, 255, 255, 0.7); }
+  background-image: url("../img/aboutBanner.jpg"); }
 
 /*********** Services ***************/
 #services-jumbo {
-  background-image: url("../img/stock.jpg"); }
-  #services-jumbo h1, #services-jumbo p {
-    color: rgba(255, 255, 255, 0.8); }
+  background-image: url("../img/servicesBanner.jpg"); }
 
 /*********** Fee ***************/
 #fee-jumbo {
@@ -220,9 +214,12 @@ p {
 #contact-jumbo {
   background-image: url("../img/stock.jpg"); }
 
+#contactBlock {
+  padding-right: 5px; }
+
 @media screen and (max-width: 768px) {
-  .col-sm-5 {
-    margin-top: 35px; } }
+  .col-sm-8 {
+    margin-top: 55px; } }
 /*********** Style Guide ***************/
 .color {
   height: 100px;
