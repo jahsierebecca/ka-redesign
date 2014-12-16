@@ -78,9 +78,9 @@ html{background-image:none;background-color: transparent}
 	padding: 2px 6px;
 }
 
-	.emailMessage>.wufoo input.text, .wufoo textarea.textarea {
-		height: 150px; /* ADDED FOR INPUT HEIGHT */
-		}
+.wufoo textarea.textarea {
+	height: 250px;
+}
 
 .wufoo label.choice{
 	color:#brown}
