@@ -1,20 +1,9 @@
-/*********** MEDIA QUERIES ***************/
-/*@media (min-width: 200px) and (max-width: 600px) {
-	 p {
-		color: red;
-	} 
-} */
-
 /*********** FONTS ***************/
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,700);
 
-
-// Font Variables
 $mainFont: 'Open Sans', sans-serif; 
 
-
-// Styles
 body {
 	font-family: $mainFont;
 	font-weight: 400;
@@ -36,9 +25,6 @@ h5 {
 	font-weight: 400;
 }
 
-/*********** END FONTS ***************/
-
-
 /*********** COLORS ***************/
 
 $dark-blue: #116D97;
@@ -47,7 +33,6 @@ $turq: #00A99D;
 $yellow: #EFC761;
 $text: #22313F;
 
-/*********** END COLORS ***************/
 
 /*********** MIXINS ***************/
 @mixin v-align {
@@ -63,6 +48,7 @@ body {
 	padding-top: 70px;
 	color: $text;
 	overflow: scroll;
+	height: 100%;
 }
 
 .container {
@@ -71,7 +57,7 @@ body {
 }
 
 
-/* Navigation */
+/********** Navigation **************/
 .navbar {
 	margin-bottom: 0px;
 	height: 80px;
@@ -106,10 +92,8 @@ body {
 	border: 0px;
 	.icon-bar {
 	background-color: white;
+	}
 }
-}
-
-
 
 #bs-example-navbar-collapse-1 {
 	margin: 10px 0;
@@ -128,6 +112,11 @@ body {
 	height: 450px;
 	.jumbo-content {
 		@include v-align;
+		top: 20%;
+		-webkit-transform: translateY(-20%);
+		-ms-transform: translateY(-20%);
+		transform: translateY(-20%);
+
 	}
 }
 
@@ -141,7 +130,7 @@ body {
 }
 
 .v-align {
-		position: relative;
+	position: relative;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -193,7 +182,7 @@ p {
 #home-jumbo {
 	background-image: url("../img/Boise.jpg");
 	background-color: $light-blue;
-		.jumbo-content {
+	.jumbo-content {
 		position: relative;
 		top: 20%;
 		-webkit-transform: translateY(-20%);
@@ -213,11 +202,11 @@ p {
 @media screen and (max-width: 768px) {
 	.icon-container {
 		height: 200px;
-	
 	}
-	#tidbitsBottom {
+	/* Bottom border for small screens */
+	.tidbitsBottom {
 		border-bottom: 1px solid $turq;
-		}
+	}
 }
 
 .tidbits {
@@ -226,8 +215,8 @@ p {
 	.icon {
 		margin: 10px;
 	}
-		.icon-text {
-		max-width: 200px;
+	.icon-text {
+		max-width: 210px;
 		padding: 20px 0px;
 	}
 	.icon-container {
@@ -248,21 +237,21 @@ p {
   	overflow: scroll;
   	margin: 0;
     height: 100%; 	
-	  	#about-text {
+	#about-text {
 	    box-sizing: border-box;
 	    text-align: right;
 	    padding: 5% 7%;
 	    top: auto; 
-	    max-width: 600px;
-		}
-		#about-textBlock, #about-img {
-			float: none;
-    display: table-cell;
-    vertical-align: top;
+	 	max-width: 620px;
+	}
+	#about-textBlock, #about-img {
+		float: none;
+    	display: table-cell;
+    	vertical-align: top;
 		}
 }
   #about-img {
-    background-image: url("../img/hand.jpg");
+    background-image: url("../img/handSmall.jpg");
     background-color: $turq;
     background-size: cover;
     background-position: center;
@@ -270,34 +259,40 @@ p {
 
 /* Block 4 */
 #bottom-jumbo {
-	background-image: url("../img/notebook.jpg");
-
+	background-image: url("../img/notebookSmall.jpg");
 }
 
 
 /*********** About Us ***************/
 
 #about-jumbo {
-	background-image: url("../img/aboutBanner.jpg");
+	background-image: url("../img/aboutBannerSmall.jpg");
+}
+
+#aboutBody {
+	max-width: 1000px;
+	img {
+		margin: 0 0 20px 20px;
+	}
 }
 
 /*********** Services ***************/
 
 #services-jumbo {
-	background-image: url("../img/servicesBanner.jpg");
+	background-image: url("../img/servicesBannerSmall.jpg");
 }
 /*********** Fee ***************/
 
 #fee-jumbo {
-	background-image: url("../img/stock3.jpg");
+	background-image: url("../img/feeBannerSmall.jpg");
+	background-position: 50% 55%;
 }
-
-
 
 /*********** Contact ***************/
 
 #contact-jumbo {
-	background-image: url("../img/stock.jpg");
+	background-image: url("../img/contactSmall.jpg");
+	background-position: 50% 25%;
 }
 
 #contactBlock {
@@ -311,10 +306,6 @@ p {
 }
 
 /*********** Style Guide ***************/
-
-.colorSwatch {
-
-}
 
 .color {
 	height: 100px;
@@ -351,12 +342,20 @@ p {
 }
 
 
-
+/*********** FOOTER *************/
 footer {
+	margin-bottom: 0;
+	bottom: 0;
+	position: fixed;
+	right: 0;
+	left: 0;
 	margin: 0;
 	padding: 10px 0;
 	height: 50px;
 	background-color: $dark-blue;
+	#home {
+		position: relative;
+	}
 	.foot-col {
 		background-color: $dark-blue;
 		height: 40px;
@@ -382,8 +381,9 @@ footer {
 		max-height: 30px;
 		width: auto;
 		@media screen and (max-width: 400px) {
-		float: left;  /* HOW TO OVERRIDE THE IMPORTANT PULL RIGHT? */
+			float: left;  /* HOW TO OVERRIDE THE IMPORTANT PULL RIGHT? */
 		}
 	}
 }
+
 
