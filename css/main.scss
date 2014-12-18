@@ -25,6 +25,7 @@ h5 {
 	font-weight: 400;
 }
 
+
 /*********** COLORS ***************/
 
 $dark-blue: #116D97;
@@ -280,6 +281,12 @@ p {
 
 #services-jumbo {
 	background-image: url("../img/servicesBannerSmall.jpg");
+}
+
+#tagline {
+	margin: 25px;
+	color: $turq;
+	text-align: center;
 }
 /*********** Fee ***************/
 

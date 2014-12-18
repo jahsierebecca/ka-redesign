@@ -209,6 +209,11 @@ p {
 #services-jumbo {
   background-image: url("../img/servicesBannerSmall.jpg"); }
 
+#tagline {
+  margin: 25px;
+  color: #00A99D;
+  text-align: center; }
+
 /*********** Fee ***************/
 #fee-jumbo {
   background-image: url("../img/feeBannerSmall.jpg");
