@@ -15,7 +15,7 @@ h4 {
 h5 {
   font-family: 'Merriweather', serif;
   font-style: italic;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: 400; }
 
 /*********** COLORS ***************/
@@ -108,7 +108,7 @@ body {
   height: 45vh; }
 
 .page-body {
-  margin: 50px; }
+  margin: 50px 50px 110px 50px; }
 
 .testemonial {
   padding: 20px 0; }
@@ -130,7 +130,8 @@ p {
 /* Block 1 */
 #home-jumbo {
   background-image: url("../img/Boise.jpg");
-  background-color: #65BAEB; }
+  background-color: #65BAEB;
+  background-position: cover; }
   #home-jumbo .jumbo-content {
     position: relative;
     top: 20%;
@@ -140,26 +141,17 @@ p {
 
 /* Block 2 */
 #icon-block {
-  padding: 0;
-  max-width: 900px; }
+  padding: 20px; }
+  #icon-block h3 {
+    position: relative;
+    top: 50%;
+    max-width: 900px; }
 
 @media screen and (max-width: 768px) {
   .icon-container {
-    height: 200px; }
-
-  /* Bottom border for small screens */
-  .tidbitsBottom {
-    border-bottom: 1px solid #00A99D; } }
+    margin-top: 0px; } }
 .tidbits {
-  padding: 0;
   text-align: center; }
-  .tidbits .icon {
-    margin: 10px; }
-  .tidbits .icon-text {
-    max-width: 210px;
-    padding: 20px 0px; }
-  .tidbits .icon-container {
-    padding-top: 20px; }
 
 /* Block 3 */
 #home-about {
@@ -228,7 +220,7 @@ p {
   padding-right: 5px; }
 
 @media screen and (max-width: 768px) {
-  .col-sm-8 {
+  .col-small {
     margin-top: 55px; } }
 /*********** Style Guide ***************/
 .color {

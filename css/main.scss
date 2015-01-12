@@ -21,7 +21,7 @@ h4 {
 h5 {
 	font-family: 'Merriweather', serif;	
 	font-style: italic;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	font-weight: 400;
 }
 
@@ -154,7 +154,7 @@ body {
 }
 
 .page-body {
-	margin: 50px;
+	margin: 50px 50px 110px 50px;
 }
 
 .testemonial {
@@ -183,6 +183,7 @@ p {
 #home-jumbo {
 	background-image: url("../img/Boise.jpg");
 	background-color: $light-blue;
+	background-position: cover;
 	.jumbo-content {
 		position: relative;
 		top: 20%;
@@ -196,33 +197,22 @@ p {
 
 /* Block 2 */
 #icon-block {
-	padding: 0;
+	padding: 20px;
+	h3 {
+	position: relative;
+	top: 50%;
 	max-width: 900px;
+}
 }
 
 @media screen and (max-width: 768px) {
 	.icon-container {
-		height: 200px;
-	}
-	/* Bottom border for small screens */
-	.tidbitsBottom {
-		border-bottom: 1px solid $turq;
+		margin-top: 0px;
 	}
 }
 
 .tidbits {
-	padding: 0;
 	text-align: center;
-	.icon {
-		margin: 10px;
-	}
-	.icon-text {
-		max-width: 210px;
-		padding: 20px 0px;
-	}
-	.icon-container {
-		padding-top: 20px;	
-	} 
 }
 
 /* Block 3 */
@@ -307,7 +297,7 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-	.col-sm-8 {
+	.col-small {
 		margin-top: 55px;
 	}
 }
