@@ -230,7 +230,6 @@ p {
     height: 100%; 	
 	#about-text {
 	    box-sizing: border-box;
-	    text-align: right;
 	    padding: 5% 7%;
 	    top: auto; 
 	 	max-width: 620px;
@@ -360,6 +359,7 @@ footer {
 	p, a {
 		display: inline-block;
 		clear: both;
+		font-size: 12px;
 		vertical-align: middle;
 		line-height: 1em;
 		top: 50%;
