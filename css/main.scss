@@ -378,7 +378,7 @@ footer {
 		max-height: 30px;
 		width: auto;
 		@media screen and (max-width: 400px) {
-			float: left;  /* HOW TO OVERRIDE THE IMPORTANT PULL RIGHT? */
+			display: none;  /* HOW TO OVERRIDE THE IMPORTANT PULL RIGHT? */
 		}
 	}
 }

@@ -291,7 +291,7 @@ footer {
     width: auto; }
     @media screen and (max-width: 400px) {
       footer a > .img-responsive {
-        float: left;
+        display: none;
         /* HOW TO OVERRIDE THE IMPORTANT PULL RIGHT? */ } }
 
 /*# sourceMappingURL=main.css.map */
